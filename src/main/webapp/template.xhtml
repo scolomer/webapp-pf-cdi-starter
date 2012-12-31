@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:h="http://java.sun.com/jsf/html" 
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:p="http://primefaces.org/ui">
+		
+<f:view contentType="text/html">
+	<h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+            <title>CDI Primeface Web Application Starter</title>
+        </f:facet>
+		<h:outputStylesheet library="css" name="default.css" />
+	</h:head>
+
+	<h:body>
+	    <div>
+			<h:form id="form">
+				<p:messages id="_msg" escape="false" showSummary="true" showDetail="false" />
+				<ui:insert name="content" />
+			</h:form>
+		</div>
+		<ui:debug hotkey="A"></ui:debug>
+	</h:body>
+	</f:view>
+</html>
