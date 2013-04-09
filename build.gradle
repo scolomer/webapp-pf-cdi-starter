@@ -2,8 +2,6 @@ apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
-sourceCompatibility = 1.6
-
 repositories {
   mavenCentral()
   maven {
@@ -17,7 +15,7 @@ repositories {
 
 dependencies {
   compile 'org.jboss.weld.servlet:weld-servlet:1.1.10.Final'
-  compile 'org.primefaces:primefaces:3.4.2'
+  compile 'org.primefaces:primefaces:3.5'
   compile 'javax.faces:javax.faces-api:2.1'
   compile 'org.glassfish:javax.faces:2.1.16'
 
